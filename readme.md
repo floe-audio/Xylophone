@@ -1,4 +1,4 @@
-# Xylophone (medium mallets)
+# FreePats - Xylophone (medium mallets)
 
 Very basic multisampled xylophone with 2 velocity layers. It's been packaged for Floe but otherwise unchanged.
 

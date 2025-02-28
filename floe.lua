@@ -1,7 +1,7 @@
 local library = floe.new_library({
     name = "Xylophone",
-    tagline = "A simple xylophone",
-    author = "Freepats",
+    tagline = "A basic xylophone",
+    author = "FreePats",
     library_url = "https://freepats.zenvoid.org/ChromaticPercussion/xylophone.html",
 })
 
