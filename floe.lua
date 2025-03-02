@@ -4,6 +4,7 @@ local library = floe.new_library({
     library_url = "https://github.com/Floe-Project/Xylophone",
     author = "FreePats",
     author_url = "https://freepats.zenvoid.org/ChromaticPercussion/xylophone.html",
+    background_image_path = "688290359_8128ed73da_k.jpg",
 })
 
 local instrument = floe.new_instrument(library, {

@@ -2,7 +2,7 @@
 
 Very basic multisampled xylophone with 2 velocity layers. It's been packaged for Floe but otherwise unchanged.
 
-Note: it doesn't have a background image.
+A background image has been added. [Xylophone and percussion (688290359)](https://www.flickr.com/photos/crashingwaves/688290359) by CrashingWaves is licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
 
 ---
 
