@@ -34,9 +34,11 @@ for _, velocity in ipairs({ "pp", "ff" }) do
         floe.add_region(instrument, {
             path = "samples/" .. region.note_name .. "_" .. velocity .. ".flac",
             root_key = region.root_key,
-            key_range = region.key_range,
-            velocity_range = velocity_range,
-            feather_overlapping_velocity_regions = true,
+            trigger_criteria = {
+                key_range = region.key_range,
+                velocity_range = velocity_range,
+                feather_overlapping_velocity_regions = true,
+            },
         })
     end
 end
