@@ -10,6 +10,7 @@ local library = floe.new_library({
 
 local instrument = floe.new_instrument(library, {
     name = "Xylophone",
+    description = "Multisampled xylophone.",
     tags = { "acoustic", "tonal percussion", "solo", "metal", "orchestral", "cinematic", "world" },
 })
 
