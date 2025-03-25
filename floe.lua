@@ -5,10 +5,12 @@ local library = floe.new_library({
     author = "FreePats",
     author_url = "https://freepats.zenvoid.org/ChromaticPercussion/xylophone.html",
     background_image_path = "688290359_8128ed73da_k.jpg",
+    icon_image_path = "icon.png",
 })
 
 local instrument = floe.new_instrument(library, {
     name = "Xylophone",
+    tags = { "acoustic", "tonal percussion", "solo", "metal", "orchestral", "cinematic", "world" },
 })
 
 for _, velocity in ipairs({ "pp", "ff" }) do
