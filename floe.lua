@@ -1,3 +1,5 @@
+floe.set_required_floe_version("0.12.1");
+
 local library = floe.new_library({
     name = "Xylophone",
     tagline = "A basic xylophone",
@@ -13,6 +15,11 @@ local instrument = floe.new_instrument(library, {
     name = "Xylophone",
     description = "Multisampled xylophone.",
     tags = { "acoustic", "tonal percussion", "solo", "metal", "orchestral", "cinematic", "world" },
+})
+
+floe.add_named_key_range(instrument, {
+    name = "Natural Range",
+    key_range = { 48, 97 },
 })
 
 for _, velocity in ipairs({ "pp", "ff" }) do
