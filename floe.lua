@@ -9,6 +9,7 @@ local library = floe.new_library({
     background_image_path = "688290359_8128ed73da_k.jpg",
     icon_image_path = "icon.png",
     description = "A multisampled xylophone from the free, public domain FreePats project.",
+    minor_version = 2,
 })
 
 local instrument = floe.new_instrument(library, {
