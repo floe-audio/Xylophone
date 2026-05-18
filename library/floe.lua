@@ -1,3 +1,11 @@
+-- Xylophone samples by FreePats (roberto@zenvoid.org), derived from the Versilian Community Sample Library.
+-- Published under Creative Commons CC0 1.0 Universal (public domain dedication).
+-- https://freepats.zenvoid.org/ChromaticPercussion/xylophone.html
+-- https://creativecommons.org/publicdomain/zero/1.0/
+--
+-- This file is a translation of Xylophone-MediumMallets-20200706.sfz into Floe's Lua format with various modifications.
+-- Copyright Sam Windell 2026
+
 floe.set_required_floe_version("0.12.1");
 
 local library = floe.new_library({
@@ -6,10 +14,18 @@ local library = floe.new_library({
     library_url = "https://github.com/Floe-Project/Xylophone",
     author = "Floe Ports",
     author_url = "https://freepats.zenvoid.org/ChromaticPercussion/xylophone.html",
-    background_image_path = "688290359_8128ed73da_k.jpg",
-    icon_image_path = "icon.png",
+    background_image_path = "Images/688290359_8128ed73da_k.jpg",
+    icon_image_path = "Images/icon.png",
     description = "A multisampled xylophone from the free, public domain FreePats project.",
     minor_version = 2,
+})
+
+floe.set_attribution_requirement("Images/688290359_8128ed73da_k.jpg", {
+    title = "Xylophone and percussion (688290359)",
+    license_name = "CC-BY-2.0",
+    license_url = "https://creativecommons.org/licenses/by/2.0/",
+    attributed_to = "CrashingWaves",
+    attribution_url = "https://www.flickr.com/photos/crashingwaves/688290359",
 })
 
 local instrument = floe.new_instrument(library, {
@@ -44,7 +60,7 @@ for _, velocity in ipairs({ "pp", "ff" }) do
 
     for _, region in ipairs(regions) do
         floe.add_region(instrument, {
-            path = "samples/" .. region.note_name .. "_" .. velocity .. ".flac",
+            path = "Samples/" .. region.note_name .. "_" .. velocity .. ".flac",
             root_key = region.root_key,
             trigger_criteria = {
                 key_range = region.key_range,
